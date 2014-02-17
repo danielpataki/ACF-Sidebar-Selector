@@ -27,7 +27,7 @@ class acf_field_sidebar_selector extends acf_Field
 
   	// set name / title
   	$this->name = 'sidebar_selector';
-	  $this->title = __('Sidebar Selector');
+	  $this->title = __('Sidebar Selector', 'acf');
 	  $this->defaults = array(
 			'allow_null' => '1'
 	  );
