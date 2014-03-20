@@ -29,7 +29,8 @@ class acf_field_sidebar_selector extends acf_Field
   	$this->name = 'sidebar_selector';
 	  $this->title = __('Sidebar Selector', 'acf');
 	  $this->defaults = array(
-			'allow_null' => '1'
+			'allow_null' => '1',
+			'default_value' => ''
 	  );
 
 		// settings
@@ -142,6 +143,23 @@ class acf_field_sidebar_selector extends acf_Field
 		?>
 	</td>
 </tr>
+<tr class="field_option field_option_<?php echo $this->name; ?>">
+	<td class="label">
+		<label><?php _e("Default Value", 'acf'); ?></label>
+	</td>
+	<td>
+		<?php
+
+		do_action('acf/create_field', array(
+			'type'    =>  'text',
+			'name'    =>  'fields[' . $key . '][default_value]',
+			'value'   =>  $field['default_value'],
+		));
+
+		?>
+	</td>
+</tr>
+
 		<?php
 	}
 
@@ -171,7 +189,7 @@ class acf_field_sidebar_selector extends acf_Field
 				<?php endif ?>
 				<?php
 					foreach( $wp_registered_sidebars as $sidebar ) :
-					$selected = ( $field['value'] == $sidebar['id'] ) ? 'selected="selected"' : '';
+					$selected = ( ( $field['value'] == $sidebar['id'] ) || ( empty( $field['value'] ) && $sidebar['id'] == $field['default_value'] ) ) ? 'selected="selected"' : '';
 				?>
 					<option <?php echo $selected ?> value='<?php echo $sidebar['id'] ?>'><?php echo $sidebar['name'] ?></option>
 				<?php endforeach; ?>
