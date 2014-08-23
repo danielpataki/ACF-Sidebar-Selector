@@ -1,13 +1,13 @@
 === Advanced Custom Fields: Sidebar Selector Field ===
 Contributors: danielpataki
-Tags:
+Tags: sidebar, acf, custom fields
 Requires at least: 3.4
-Tested up to: 3.9
+Tested up to: 3.9.2
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This field allows you to select a sidebar
+This is an addon to Advanced Custom Fields which allows you to select a sidebar
 
 == Description ==
 
@@ -15,33 +15,23 @@ Allows the selection of a registered WordPress sidebar. Also allows for null val
 
 = Compatibility =
 
-This add-on will work with:
+This ACF field type is compatible with:
 
-* version 4 and up
-* version 3 and bellow
+* ACF 5
+* ACF 4
 
 == Installation ==
 
-This add-on can be treated as both a WP plugin and a theme include.
-
-= Plugin =
-1. Copy the 'acf-sidebar_selector' folder into your plugins folder
-2. Activate the plugin via the Plugins admin page
-
-= Include =
-1.	Copy the 'acf-sidebar_selector' folder into your theme folder (can use sub folders). You can place the folder anywhere inside the 'wp-content' directory
-2.	Edit your functions.php file and add the code below (Make sure the path is correct to include the acf-sidebar_selector.php file)
-
-`
-add_action('acf/register_fields', 'my_register_fields');
-
-function my_register_fields()
-{
-	include_once('acf-sidebar_selector/acf-sidebar_selector.php');
-}
-`
+1. Copy the `acf-sidebar_selector` folder into your `wp-content/plugins` folder
+2. Activate the Sidebar Selector plugin via the plugins admin page
+3. Create a new field via ACF and select the Sidebar Selector type
+4. Please refer to the description for more info regarding the field type settings
 
 == Changelog ==
 
 = 1.0 =
 * Initial Release.
+
+= 2.0 =
+* Dropped ACF 3 Support
+* Added ACF 5 Support
