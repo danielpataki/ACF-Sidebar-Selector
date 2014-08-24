@@ -94,7 +94,7 @@ class acf_field_sidebar_selector extends acf_field {
 	*/
 
 	function render_field( $field ) {
-
+		global $wp_registered_sidebars;
 
 		?>
 		<div>
