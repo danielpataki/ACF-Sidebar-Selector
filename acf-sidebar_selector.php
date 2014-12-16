@@ -4,7 +4,7 @@
 Plugin Name: Advanced Custom Fields: Sidebar Selector
 Plugin URI: https://github.com/danielpataki/acf-sidebar-selector
 Description: A field which allows you to select sidebars
-Version: 2.0
+Version: 2.0.1
 Author: Daniel Pataki
 Author URI: http://danielpataki.com
 License: GPLv2 or later

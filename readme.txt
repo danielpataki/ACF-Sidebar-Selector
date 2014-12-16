@@ -2,7 +2,7 @@
 Contributors: danielpataki
 Tags: sidebar, acf, custom fields
 Requires at least: 3.4
-Tested up to: 4.0
+Tested up to: 4.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -29,9 +29,12 @@ This ACF field type is compatible with:
 
 == Changelog ==
 
-= 1.0 =
-* Initial Release.
+= 2.0.1 =
+* Updated for WordPress 4.1
 
 = 2.0 =
 * Dropped ACF 3 Support
 * Added ACF 5 Support
+
+= 1.0 =
+* Initial Release.
