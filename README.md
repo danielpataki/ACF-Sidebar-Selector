@@ -10,6 +10,8 @@ Allows the selection of a registered WordPress sidebar. Also allows for null val
 #### Thanks
 
 - [Advanced Custom Fields](http://www.advancedcustomfields.com/) for the awesome base plugin.
+- [Buditanrim](https://www.iconfinder.com/buditanrim) for the plugin's icon
+
 
 #### Translations
 
